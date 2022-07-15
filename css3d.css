@@ -1,0 +1,90 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box;
+}
+a {
+	color: royalblue;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.world{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    perspective: 900px;
+}
+
+@keyframes poster-ani {
+    from {
+        transform: rotateY(-10deg);
+    }
+    to {
+        transform: rotateY(10deg);
+    }
+}
+.poster {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(183, 229, 237, 1);
+    box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+    animation: poster-ani 1.6s infinite alternate linear;
+    transform-style: preserve-3d;
+}
+
+.poster-title {
+    padding: 0.1em 0;
+    font-size: 2rem;
+    font-family:  swagger;
+    font-weight: 700;
+    text-align: center;
+    transform: translateZ(25px);
+}
+
+.floater{
+    position: absolute;
+    width: 40%;
+}
+
+.floater:nth-of-type(1) {
+     width: 40%;
+     left: 42%;
+     bottom: 2%;
+     transform: translateZ(30px);
+}
+.floater:nth-of-type(2) {
+     width: 45%;
+     left: -16%;
+     bottom: -7%;
+     transform: translateZ(20px);     
+}
+.floater:nth-of-type(3) {
+     width: 45%;
+     left: 12%;
+     bottom: 19%;
+     /* transform: translateZ(5px); */
+}
+
+.header {
+	padding: 2rem 0;
+	text-align: center;
+}
+.global-footer {
+	padding: 2rem 0;
+	text-align: center;
+}
